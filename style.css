@@ -1,0 +1,137 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-primary: "Montserrat", sans-serif;
+
+  --fw-reg: 400;
+  --fw-extra: 500;
+  --fw-bold: 700;
+  --fw-h1: 900;
+  --fw-h2: 800;
+  --fw-h3: 600;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.5rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+
+  --clr-accent: #ff7600;
+  --clr-h1: #343a40;
+  --clr-h2: #242424;
+  --clr-h3: #3b3b3b;
+  --clr-bio: #2c3e50;
+  --clr-body-font: #222;
+}
+body {
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-reg);
+  line-height: 1.6;
+  color: var(--clr-body-font);
+}
+
+/* Intro Area */
+.intro-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(images/top-banner.png);
+  background-repeat: no-repeat;
+}
+/* Intro Left Area */
+.intro-left {
+  margin: 0% 5%;
+}
+.highlight-color {
+  color: var(--clr-accent);
+}
+.intro-text {
+  font-size: var(--fs-h2);
+  color: var(--clr-h2);
+}
+.intro-title {
+  font-size: var(--fs-h1);
+  color: var(--clr-h1);
+}
+.bio-text {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-extra);
+  color: var(--clr-bio);
+}
+.my-bio {
+  margin-bottom: 15px;
+}
+/* Button Design */
+.btn-link {
+  background-image: linear-gradient(90deg, green, lightgreen);
+  padding: 9px 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+}
+/* Intro Right Area */
+.intro-right {
+  margin: 0% 5%;
+}
+.my-picture {
+  display: block;
+  max-width: 100%;
+}
+/* Experience Area */
+.experience-area {
+  margin: 0% 5% 5% 5%;
+  display: flex;
+}
+.experience-title {
+  color: var(--clr-h2);
+  display: inline-block;
+  margin: 2% 0% 0% 0%;
+  font-size: var(--fs-h2);
+}
+.experience-left,
+.experience-right {
+  box-shadow: 5px 5px 20px gray;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+  flex-basis: 50%;
+}
+.experience-left:hover,
+.experience-right:hover {
+  box-shadow: 10px 10px 30px gray;
+}
+.experience-left {
+  border-left: 7px solid;
+  border-image: linear-gradient(lightSalmon, tomato);
+  border-image-slice: 1;
+}
+.experience-right {
+  border-left: 7px solid;
+  border-image: linear-gradient(blue, cyan);
+  border-image-slice: 1;
+}
+.experience-h3 {
+  color: var(--clr-h3);
+  font-weight: var(--fw-h3);
+  font-size: var(--fs-h3);
+}
+.experience-duration {
+  color: var(--clr-accent);
+  padding: 10px 0px;
+}
+.footer-text {
+  background-color: indigo;
+  min-height: 50px;
+  min-width: 100%;
+  color: ivory;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
